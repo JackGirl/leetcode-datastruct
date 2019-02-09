@@ -5,6 +5,7 @@ package src.datastructure;
  * 链表   可用双向
  * @param <E>
  */
+@SuppressWarnings("unchecked")
 public class MyLinkedList<E> {
     //第一个元素
     private Node <E>first;

@@ -8,6 +8,7 @@ import java.util.logging.Logger;
  * MyList 为空初始长度十
  * @param <E>
  */
+@SuppressWarnings("unchecked")
 public class MyList<E> {
 
     private static final Logger log =  Logger.getLogger(MyList.class.getName()) ;
