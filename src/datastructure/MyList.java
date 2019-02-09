@@ -1,4 +1,4 @@
-package com.zbxx.structure.list;
+package src.datastructure;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
@@ -70,7 +70,7 @@ public class MyList<E> {
    }
 
     /**
-     * 获取指定位置元素
+     * 获取指定位置元素 下标从零开始
      * @param index
      * @return
      */
