@@ -54,8 +54,9 @@ public class MyLinkedList<E> {
         Node<E> elem = first;
         int index = 0;
         while (null!=elem){
-            if(elem==e)
+            if(elem==e){
                 return index;
+            }
             if(e instanceof String &&elem.data.equals(e)){
                 return index;
             }
@@ -80,10 +81,23 @@ public class MyLinkedList<E> {
      */
     public void remove(int index){
         rangeIndex(index);
-        Node<E> node = getNode(index);
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
-        node = null;
+        if(first==last){
+            first=null;
+            last=null;
+        }
+        else if(index==0&&DATA_SIZE>1){
+            first=first.next;
+            first.prev=null;
+        }
+        else if(index==(DATA_SIZE-1)&&first!=last){
+            last=last.prev;
+            last.next=null;
+        }
+        else{
+            Node<E> node = getNode(index);
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+        }
         DATA_SIZE--;
     }
 
