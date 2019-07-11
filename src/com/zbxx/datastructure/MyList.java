@@ -1,4 +1,4 @@
-package src.datastructure;
+package src.com.zbxx.datastructure;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
