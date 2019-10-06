@@ -9,10 +9,11 @@ public class InsertSort {
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i] < arr[i - 1]) {
 				int temp = arr[i];
-				int j;
+				int j = i - 1;
 				//将小的全部往后挪
-				for (j = i - 1; j > 0 && temp < arr[j]; j--) {
+				while (j > 0 && temp < arr[j]) {
 					arr[j + 1] = arr[j];
+					j--;
 				}
 				arr[j + 1] = temp;
 			}
