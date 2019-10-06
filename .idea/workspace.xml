@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="109c16c8-b23b-4f9e-9553-0c99f2c56d52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zbxx/datastructure/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zbxx/datastructure/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zbxx/leetcode/AddTwoNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zbxx/leetcode/LengthOfLongestSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zbxx/leetcode/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zbxx/sort/FastSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/sort/InsertSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zbxx/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/search/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zbxx/sort/FastSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/sort/FastSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,13 +49,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyQueue">
-    <configuration name="AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.leetcode.AddTwoNumbers" />
+  <component name="RunManager" selected="Application.InsertSort">
+    <configuration name="FastSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.sort.FastSort" />
       <module name="my-datastructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.com.zbxx.leetcode.*" />
+          <option name="PATTERN" value="src.com.zbxx.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.sort.InsertSort" />
+      <module name="my-datastructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.zbxx.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,26 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.leetcode.TwoSum" />
-      <module name="my-datastructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="src.com.zbxx.leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertSort" />
+        <item itemvalue="Application.FastSort" />
         <item itemvalue="Application.MyQueue" />
         <item itemvalue="Application.MyStack" />
         <item itemvalue="Application.LengthOfLongestSubstring" />
-        <item itemvalue="Application.AddTwoNumbers" />
-        <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -155,8 +148,16 @@
       <workItem from="1569596975773" duration="2666000" />
       <workItem from="1569634140121" duration="75000" />
       <workItem from="1569741356163" duration="407000" />
-      <workItem from="1570335861021" duration="1034000" />
+      <workItem from="1570335861021" duration="5389000" />
     </task>
+    <task id="LOCAL-00001" summary="sort and stack queue">
+      <created>1570337290167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570337290167</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,5 +175,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sort and stack queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort and stack queue" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
