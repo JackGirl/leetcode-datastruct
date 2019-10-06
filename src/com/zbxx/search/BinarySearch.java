@@ -6,7 +6,6 @@ package src.com.zbxx.search;
  *      元素必须已经有序 否则干不了
  *       先从中间找   再判断区间 重复 以上步骤
  *  </remark>
- * @author 万仁杰
  * @date 2019/06/24
  */
 public class BinarySearch {

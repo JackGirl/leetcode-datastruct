@@ -1,58 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="109c16c8-b23b-4f9e-9553-0c99f2c56d52" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="109c16c8-b23b-4f9e-9553-0c99f2c56d52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/datastructure/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/datastructure/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/leetcode/AddTwoNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/leetcode/LengthOfLongestSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/leetcode/TwoSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zbxx/sort/FastSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zbxx/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zbxx/datastructure/MyLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3427">
-              <caret line="134" column="25" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,75 +35,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/zbxx/search/BinarySearch.java" />
-        <option value="$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java" />
-        <option value="$PROJECT_DIR$/src/com/zbxx/datastructure/MyLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/test/Test.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="3" />
-    <option name="width" value="1632" />
-    <option name="height" value="998" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="my-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-datastructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-datastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-datastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-datastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zbxx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-datastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zbxx" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1Q4xG2TB20rcredGXSD59NPMXDa" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561514416859" />
-    <property name="last_opened_file_path" value="E:/公司项目/develop-cuihuojian/develop-cuihuojian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,13 +56,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.search.BinarySearch" />
+  <component name="RunManager" selected="Application.MyQueue">
+    <configuration name="AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.leetcode.AddTwoNumbers" />
       <module name="my-datastructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.com.zbxx.search.*" />
+          <option name="PATTERN" value="src.com.zbxx.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.sort.BubbleSort" />
+    <configuration name="LengthOfLongestSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.leetcode.LengthOfLongestSubstring" />
       <module name="my-datastructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.com.zbxx.sort.*" />
+          <option name="PATTERN" value="src.com.zbxx.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.sort.SelectSort" />
+    <configuration name="MyQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.datastructure.MyQueue" />
       <module name="my-datastructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.com.zbxx.sort.*" />
+          <option name="PATTERN" value="src.com.zbxx.datastructure.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,12 +96,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.test.Test" />
+    <configuration name="MyStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.datastructure.MyStack" />
       <module name="my-datastructure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.test.*" />
+          <option name="PATTERN" value="src.com.zbxx.datastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.com.zbxx.leetcode.TwoSum" />
+      <module name="my-datastructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.com.zbxx.leetcode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,10 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.SelectSort" />
-        <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.MyQueue" />
+        <item itemvalue="Application.MyStack" />
+        <item itemvalue="Application.LengthOfLongestSubstring" />
+        <item itemvalue="Application.AddTwoNumbers" />
+        <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -226,134 +145,34 @@
       <workItem from="1561333075799" duration="2184000" />
       <workItem from="1561420857181" duration="1877000" />
       <workItem from="1561510744953" duration="3039000" />
+      <workItem from="1567043572724" duration="1148000" />
+      <workItem from="1567045074883" duration="8981000" />
+      <workItem from="1567064354866" duration="788000" />
+      <workItem from="1567144904205" duration="4191000" />
+      <workItem from="1567153437199" duration="2785000" />
+      <workItem from="1567394818789" duration="1980000" />
+      <workItem from="1567404899206" duration="4342000" />
+      <workItem from="1569596975773" duration="2666000" />
+      <workItem from="1569634140121" duration="75000" />
+      <workItem from="1569741356163" duration="407000" />
+      <workItem from="1570335861021" duration="1034000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7100000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="37" y="3" width="1632" height="998" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25636134" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Designer" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.07756563" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="MyBatis Sql Log" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="BPMNPalette" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/util/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/util/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-818">
-          <caret line="602" column="9" lean-forward="true" selection-start-line="602" selection-start-column="9" selection-end-line="602" selection-end-column="9" />
-          <folding>
-            <element signature="e#14175#14176#0" expanded="true" />
-            <element signature="e#14211#14212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zbxx/search/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/util/stream/StreamSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="66" column="26" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10377">
-          <caret line="153" column="17" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files (x86)/Java/jdk1.8.0_171/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="580" column="32" lean-forward="true" selection-start-line="580" selection-start-column="32" selection-end-line="580" selection-end-column="32" />
-          <folding>
-            <element signature="e#26957#26958#0" expanded="true" />
-            <element signature="e#27022#27023#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zbxx/datastructure/MyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3427">
-          <caret line="134" column="25" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zbxx/sort/SelectSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zbxx/sort/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

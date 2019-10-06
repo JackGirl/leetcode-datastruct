@@ -2,12 +2,7 @@ package src.com.zbxx.sort;
 
 import java.util.Arrays;
 
-/**
- * 冒泡排序
- *
- * @author 万仁杰
- * @date 2019/06/24
- */
+
 public class BubbleSort {
 
     private static void bubbleSort(int[] array){

@@ -2,12 +2,7 @@ package src.com.zbxx.sort;
 
 import java.util.Arrays;
 
-/**
- * 选择排序
- *
- * @author 万仁杰
- * @date 2019/06/25
- */
+
 public class SelectSort {
 
     private static void selectSort(int [] array){
