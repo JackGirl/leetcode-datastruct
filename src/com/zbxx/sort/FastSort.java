@@ -36,7 +36,7 @@ public class FastSort {
 
 
 	public static void main(String[] args) {
-		int arr[] = {1, 2, 32, 3, 8, 4, 6};
+		int arr[] = {9, 2, 32, 3, 8, 4, 6, 3, 2, 9, 0};
 		fastSort(arr, 0, arr.length - 1);
 		System.out.println(Arrays.toString(arr));
 	}
