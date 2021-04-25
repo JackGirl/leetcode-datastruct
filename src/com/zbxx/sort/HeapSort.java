@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class HeapSort {
 
 	public static void main(String[] args) {
-		var arr = new int[]{1, 9, 3, 6, 4, 5, 2, 0};
+		int[] arr = new int[]{1, 9, 3, 6, 4, 5, 2, 0};
 		int start = (arr.length - 1) / 2;
 		for (int i = start; i >= 0; i--) {
 			maxHeap(arr, arr.length, i);
@@ -40,6 +40,7 @@ public class HeapSort {
 			maxHeap(arr, length, max);
 		}
 	}
+
 
 	public static void swap(int[] arr, int left, int right) {
 		int temp = arr[left];
