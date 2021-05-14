@@ -1,6 +1,6 @@
-package src.com.zbxx.sort;
+package com.zbxx.sort;
 
-import src.com.zbxx.util.ArrayUtils;
+import com.zbxx.util.ArrayUtils;
 
 import java.util.Arrays;
 

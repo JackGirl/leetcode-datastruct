@@ -1,4 +1,4 @@
-package src.com.zbxx.datastructure.binarytree;
+package com.zbxx.datastructure.binarytree;
 
 
 /**
@@ -12,39 +12,39 @@ package src.com.zbxx.datastructure.binarytree;
  */
 public class ArrayTreeNode {
 
-	private int[] data;
+    private int[] data;
 
-	public ArrayTreeNode(int[] array) {
-		this.data = array;
-	}
+    public ArrayTreeNode(int[] array) {
+        this.data = array;
+    }
 
-	/**
-	 * @description : 检查data为空 用包装类
-	 * @author :    万仁杰
-	 * @createDate : 11:21 2019/10/10
-	 * @modifyDate :
-	 */
-	public int frontSearch(int index, int value) {
-		int searchIndex = -1;
-		if (index < data.length) {
-			if (data[index] == value) {
-				return index;
-			}
-			if (index <= data.length) {
-				searchIndex = frontSearch(2 * index + 1, value);
-			}
-			if (searchIndex == -1) {
-				if (index <= data.length) {
-					searchIndex = frontSearch(2 * index + 2, value);
-				}
-			}
-		}
+    /**
+     * @description : 检查data为空 用包装类
+     * @author :    万仁杰
+     * @createDate : 11:21 2019/10/10
+     * @modifyDate :
+     */
+    public int frontSearch(int index, int value) {
+        int searchIndex = -1;
+        if (index < data.length) {
+            if (data[index] == value) {
+                return index;
+            }
+            if (index <= data.length) {
+                searchIndex = frontSearch(2 * index + 1, value);
+            }
+            if (searchIndex == -1) {
+                if (index <= data.length) {
+                    searchIndex = frontSearch(2 * index + 2, value);
+                }
+            }
+        }
 
 
-		return searchIndex;
-	}
+        return searchIndex;
+    }
 
-	public boolean isEmpty() {
-		return data == null || data.length == 0;
-	}
+    public boolean isEmpty() {
+        return data == null || data.length == 0;
+    }
 }

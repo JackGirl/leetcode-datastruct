@@ -1,4 +1,4 @@
-package src.com.zbxx.leetcode;
+package com.zbxx.leetcode;
 
 import java.util.Arrays;
 
@@ -21,7 +21,7 @@ public class AddTwoNumbers {
 
 
 	public class ListNode {
-		int val;
+		int      val;
 		ListNode next;
 
 		ListNode(int x) {

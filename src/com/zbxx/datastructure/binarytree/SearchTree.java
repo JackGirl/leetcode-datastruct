@@ -1,4 +1,4 @@
-package src.com.zbxx.datastructure.binarytree;
+package com.zbxx.datastructure.binarytree;
 
 import java.util.LinkedList;
 import java.util.Queue;

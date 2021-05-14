@@ -1,4 +1,4 @@
-package src.com.zbxx.datastructure;
+package com.zbxx.datastructure;
 
 /**
  * @author: soft

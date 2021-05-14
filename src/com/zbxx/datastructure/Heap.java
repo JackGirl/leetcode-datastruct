@@ -1,7 +1,7 @@
-package src.com.zbxx.datastructure;
+package com.zbxx.datastructure;
 
 
-import src.com.zbxx.util.ArrayUtils;
+import com.zbxx.util.ArrayUtils;
 
 import java.util.Arrays;
 

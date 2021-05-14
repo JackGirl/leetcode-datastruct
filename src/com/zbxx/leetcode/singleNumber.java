@@ -1,4 +1,4 @@
-package src.com.zbxx.leetcode;
+package com.zbxx.leetcode;
 
 import java.util.HashSet;
 import java.util.Set;

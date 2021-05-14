@@ -1,4 +1,4 @@
-package src.com.zbxx.sort;
+package com.zbxx.sort;
 
 import java.util.Arrays;
 
