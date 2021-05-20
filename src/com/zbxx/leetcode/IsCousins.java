@@ -2,6 +2,9 @@ package com.zbxx.leetcode;
 
 import java.util.*;
 
+/**
+ * 是否堂兄弟节点
+ */
 public class IsCousins {
 
 

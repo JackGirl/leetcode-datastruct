@@ -1,5 +1,9 @@
 package com.zbxx.leetcode;
 
+
+/**
+ * 二叉树最大路径和
+ */
 public class MaxPathSum {
 
 
