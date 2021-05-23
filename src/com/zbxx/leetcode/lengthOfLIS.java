@@ -1,5 +1,9 @@
 package com.zbxx.leetcode;
 
+
+/**
+ * 最大上升子序列 leetcode 300
+ */
 public class lengthOfLIS {
 
     public static void main(String[] args) {
