@@ -7,7 +7,7 @@ import java.util.Arrays;
  * leetcode 学习 数组和字符串 二维数组 旋转矩阵
  * <p>
  * <p>
- * ..直接硬编码   快速的方法是直接两个双层循环  先对角反转 然后镜像翻转
+ * ..直接硬编码   快速的方法是直接两个双层循环  先对角反转 然后镜像翻转   还有就是新建数组 然后直接旋转。。。难顶
  */
 public class arrayAndStr_rotate {
 
