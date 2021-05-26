@@ -4,7 +4,7 @@ package com.zbxx.leetcode;
 import java.util.*;
 
 /**
- * leetcode 1190  翻转每队括号中的字符
+ * leetcode 1190  翻转每队括号中的字符s
  */
 public class reverseParentheses {
 
