@@ -2,7 +2,6 @@ package com.zbxx.datastructure;
 
 import lombok.Data;
 
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -12,6 +11,75 @@ import java.util.Map;
  * @param <V>
  */
 public class MyHashMap<K extends Comparable, V> {
+
+
+    @Data
+    static class ListNode<K extends Comparable, V> implements Map.Entry<K, V> {
+
+        K k;
+
+        V v;
+
+        ListNode<K, V> next;
+
+        public ListNode(K k, V v) {
+            this.k = k;
+            this.v = v;
+        }
+
+
+        @Override
+        public K getKey() {
+            return null;
+        }
+
+        @Override
+        public V getValue() {
+            return null;
+        }
+
+        @Override
+        public V setValue(V value) {
+            V old = v;
+            v = value;
+            return old;
+        }
+    }
+
+    @Data
+    static class TreeNode<K extends Comparable, V> implements Map.Entry<K, V> {
+
+        K k;
+
+        V v;
+
+        boolean red;
+
+        TreeNode<K, V> parent;
+
+        TreeNode<K, V> left;
+
+        TreeNode<K, V> right;
+
+        @Override
+        public K getKey() {
+            return k;
+        }
+
+        @Override
+        public V getValue() {
+            return v;
+        }
+
+        @Override
+        public V setValue(V value) {
+            V old = v;
+            v = value;
+            return old;
+        }
+
+
+    }
 
     /**
      * 数据
@@ -77,71 +145,8 @@ public class MyHashMap<K extends Comparable, V> {
         return size;
     }
 
-
-    @Data
-    static class ListNode<K extends Comparable, V> implements Map.Entry<K, V> {
-
-        K k;
-
-        V v;
-
-        ListNode<K, V> next;
-
-        public ListNode(K k, V v) {
-            this.k = k;
-            this.v = v;
-        }
-
-
-        @Override
-        public K getKey() {
-            return null;
-        }
-
-        @Override
-        public V getValue() {
-            return null;
-        }
-
-        @Override
-        public V setValue(V value) {
-            V old = v;
-            v = value;
-            return old;
-        }
-    }
-
-    @Data
-    static class TreeNode<K extends Comparable, V> implements Map.Entry<K, V> {
-
-        K k;
-
-        V v;
-
-        TreeNode<K, V> parent;
-
-        TreeNode<K, V> left;
-
-        TreeNode<K, V> right;
-
-        @Override
-        public K getKey() {
-            return k;
-        }
-
-        @Override
-        public V getValue() {
-            return v;
-        }
-
-        @Override
-        public V setValue(V value) {
-            V old = v;
-            v = value;
-            return old;
-        }
-
-
+    Iterable<K> keys() {
+        return null;
     }
 
 
