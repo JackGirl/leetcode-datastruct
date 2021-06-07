@@ -1,6 +1,7 @@
 package com.zbxx.datastructure;
 
 import lombok.AllArgsConstructor;
+import lombok.val;
 
 import java.util.Deque;
 import java.util.HashSet;
@@ -69,6 +70,20 @@ public class MyHashMap<K extends Comparable, V> {
                 p = p.parent;
             }
             return p;
+        }
+
+        public TreeNode<K, V> findRightMin() {
+            if (this.right == null) {
+                return null;
+            }
+            TreeNode<K, V> node = this.right;
+            while (node != null) {
+                if (node.left == null) {
+                    break;
+                }
+                node = node.left;
+            }
+            return node;
         }
 
         @Override
@@ -258,14 +273,14 @@ public class MyHashMap<K extends Comparable, V> {
     }
 
 
-    public V remove(K k) {
-        int hash = hash(k);
+    public void remove(K k) {
+        int hash = 3333 /*hash(k)*/;
         TreeNode<K, V> root = table[index(hash, table.length)];
         if (root == null) {
-            return null;
+            return;
         }
         TreeNode<K, V> node = del(find(root, k));
-        return node == null ? null : node.getValue();
+        table[index(hash, table.length)] = node;
     }
 
     private TreeNode<K, V> getBrother(TreeNode<K, V> node) {
@@ -275,17 +290,29 @@ public class MyHashMap<K extends Comparable, V> {
         return node.equals(node.parent.left) ? node.parent.right : node.parent.left;
     }
 
+
+    /**
+     * 删除后返回新的根节点
+     *
+     * @param node
+     * @return
+     */
     private TreeNode<K, V> del(TreeNode<K, V> node) {
+        if (node.isRoot()) {
+            return null;
+        }
+
         //没有子节点
         if (node.left == null && node.right == null) {
-            if (node.isRed()) {
-                TreeNode<K, V> p = node.parent;
-                boolean nLeft = node.equals(p.left) ? true : false;
-                TreeNode<K, V> brother = getBrother(node);
+            TreeNode<K, V> p = node.parent;
+            boolean nLeft = node.equals(p.left) ? true : false;
+            TreeNode<K, V> brother = getBrother(node);
+            if (!node.isRed()) {
                 //当前节点在左边
                 if (nLeft) {
                     //兄弟节点右边黑色
                     if (!brother.isRed()) {
+                        //只有一个节点
                         if (brother.left != null || brother.right != null) {
                             //右节点
                             if (brother.left == null) {
@@ -294,66 +321,121 @@ public class MyHashMap<K extends Comparable, V> {
                                 brother.setColor(p.red);
                                 p.setColor(BLACK);
                                 rotateLeft(p);
-                                return node;
+                                node.parent = null;
+                                return p.getRoot();
                                 //兄弟节点左节点
                             } else if (brother.right == null) {
                                 TreeNode<K, V> newBrother = rotateRight(brother);
                                 newBrother.setColor(p.red);
                                 p.setColor(BLACK);
                                 newBrother.right.setColor(BLACK);
-                            } else {
                                 p.left = null;
-                                p.setColor(BLACK);
-                                brother.right.setColor(BLACK);
+                                node.parent = null;
                                 rotateLeft(p);
+                                return p.getRoot();
+                                //两个子节点
+                            } else {
+                                brother.right.setColor(BLACK);
+                                brother.setColor(p.red);
+                                p.setColor(BLACK);
+                                p.left = null;
+                                node.parent = null;
+                                rotateLeft(p);
+                                return p.getRoot();
                             }
+                        } else {
+                            brother.setColor(RED);
+                            node = null;
+                            node.parent.left = null;
+                            recolorAndRotate(brother);
+                            return brother.getRoot();
                         }
+                    } else {
+                        //兄弟节点红色
+                        TreeNode<K, V> gp = rotateLeft(p);
+                        p.setColor(gp.red);
+                        brother.setColor(BLACK);
+                        return del(node);
                     }
 
                 } else {
-
+                    //
+                    if (!brother.isRed()) {
+                        //只有一个节点
+                        if (brother.left != null || brother.right != null) {
+                            //右节点
+                            if (brother.left == null) {
+                                p.right = null;
+                                brother.right.setColor(BLACK);
+                                brother.setColor(RED);
+                                TreeNode<K, V> newBrother = rotateLeft(brother);
+                                newBrother.setColor(p.red);
+                                p.setColor(BLACK);
+                                newBrother.left.setColor(BLACK);
+                                rotateRight(p);
+                                return p.getRoot();
+                            } else if (brother.right == null) {
+                                p.right = null;
+                                brother.setColor(p.red);
+                                brother.left.setColor(BLACK);
+                                p.setColor(BLACK);
+                                rotateRight(p);
+                                return p.getRoot();
+                                //两个子节点
+                            } else {
+                                brother.left.setColor(BLACK);
+                                brother.setColor(p.red);
+                                p.right = null;
+                                p.setColor(BLACK);
+                                rotateRight(p);
+                                return brother.getRoot();
+                            }
+                        } else {
+                            //没有子节点
+                            brother.setColor(RED);
+                            p.right = null;
+                            recolorAndRotate(brother);
+                            return brother.getRoot();
+                        }
+                    } else {
+                        //兄弟节点红色
+                        TreeNode<K, V> gp = rotateRight(p);
+                        p.setColor(gp.red);
+                        gp.setColor(BLACK);
+                        return del(node);
+                    }
                 }
 
             } else {
-
+                //当前红色节点
+                if (nLeft) {
+                    p.left = null;
+                } else {
+                    p.right = null;
+                }
+                return p.getRoot();
             }
         }
         //单个子节点  交换  删除
         else if (node.left == null || node.right == null) {
             if (node.left == null) {
-
+                node.setValue(node.right.getValue());
+                node.setK(node.right.getKey());
+                node.right = null;
             } else {
-
+                node.setValue(node.left.getValue());
+                node.setK(node.left.getKey());
+                node.left = null;
             }
+            return node.getRoot();
         } else {
             //左右不为空 从右子树找后继节点交换删除
+            TreeNode<K, V> rightMin = node.findRightMin();
+            node.setValue(rightMin.getValue());
+            node.setK(rightMin.getKey());
+            return del(rightMin);
         }
-        return node;
-    }
 
-
-    /**
-     * 当前节点黑色没有子节点  一定右兄弟节点 否则不满足黑平衡
-     *
-     * @param node
-     */
-    private TreeNode<K, V> recolorOnDel(TreeNode<K, V> node) {
-        TreeNode<K, V> brother = getBrother(node);
-        if (node.isRoot()) {
-            return node;
-        }
-        TreeNode<K, V> parent = node.parent;
-        if (!brother.isRed()) {
-            if (brother.left == null && brother.right != null) {
-                brother.right.setColor(BLACK);
-                brother.setColor(parent.red);
-                parent.setColor(BLACK);
-
-            }
-        } else {
-
-        }
-        return null;
     }
 
 
@@ -419,10 +501,10 @@ public class MyHashMap<K extends Comparable, V> {
         h.putVal(3333, 13, "13");
         h.putVal(3333, 36, "36");
         h.putVal(3333, 73, "73");
+/*
         TreeNode treeNode = h.table[5];
         Deque<TreeNode> deque = new LinkedList();
         deque.addLast(treeNode);
-
         while (!deque.isEmpty()) {
             TreeNode node = deque.pollFirst();
             System.out.println("val:" + node.getValue() + " red:" + node.isRed());
@@ -433,7 +515,23 @@ public class MyHashMap<K extends Comparable, V> {
                 deque.addLast(node.right);
             }
         }
+*/
 
+
+        h.remove(93);
+        TreeNode ss = h.table[5];
+        Deque<TreeNode> dd = new LinkedList();
+        dd.addLast(ss);
+        while (!dd.isEmpty()) {
+            TreeNode node = dd.pollFirst();
+            System.out.println("val:" + node.getValue() + " red:" + node.isRed());
+            if (node.left != null) {
+                dd.addLast(node.left);
+            }
+            if (node.right != null) {
+                dd.addLast(node.right);
+            }
+        }
     }
 
 }
