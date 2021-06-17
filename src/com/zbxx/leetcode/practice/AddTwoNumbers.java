@@ -1,15 +1,17 @@
 package com.zbxx.leetcode.practice;
 
+import com.zbxx.leetcode.struct.ListNode;
+
 public class AddTwoNumbers {
     static AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
 
     public static void main(String[] args) {
-        ListNode l1 = addTwoNumbers.new ListNode(4);
-        l1.next = addTwoNumbers.new ListNode(7);
-        l1.next.next = addTwoNumbers.new ListNode(9);
-        ListNode l2 = addTwoNumbers.new ListNode(5);
-        l2.next = addTwoNumbers.new ListNode(3);
-        l2.next.next = addTwoNumbers.new ListNode(0);
+        ListNode l1 = new ListNode(4);
+        l1.next = new ListNode(7);
+        l1.next.next = new ListNode(9);
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(3);
+        l2.next.next = new ListNode(0);
         ListNode s = addTwoNumbers.addTwoNumbers(l1, l2);
         while (s != null) {
             System.out.print(s.val + "->");
@@ -17,15 +19,6 @@ public class AddTwoNumbers {
         }
     }
 
-
-    public class ListNode {
-        int      val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int outValue = 0, sum, val;
