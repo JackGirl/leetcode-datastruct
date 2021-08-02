@@ -1,6 +1,10 @@
 package com.zbxx.leetcode.practice.array;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 交替数组和
  */

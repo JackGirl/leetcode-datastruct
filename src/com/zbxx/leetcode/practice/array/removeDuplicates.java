@@ -32,6 +32,20 @@ public class removeDuplicates {
         return l;
     }
 
+/*    public static int removeDuplicates(int[] nums) {
+        int index = 1;
+        int s = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (s == nums[i]) {
+                continue;
+            } else {
+                nums[index++] = nums[i];
+                s = nums[i];
+            }
+        }
+        return index;
+    }*/
+
     public static void main(String[] args) {
         int[] s = {1, 1, 2};
         removeDuplicates removeDuplicates = new removeDuplicates();
