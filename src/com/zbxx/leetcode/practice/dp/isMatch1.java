@@ -1,10 +1,10 @@
-package com.zbxx.leetcode.practice.array;
+package com.zbxx.leetcode.practice.dp;
 
 
 /**
  * 10 正则表达式匹配
  */
-public class isMatch {
+public class isMatch1 {
 
 
     public static boolean isMatch(String s, String p) {
