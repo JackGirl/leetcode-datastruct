@@ -26,16 +26,8 @@ public class wordBreak {
                 if (i <= j) {
                     String t = s.substring(i - 1, j);
                     if (wordDict.contains(t)) {
-                        if (i > 1) {
-                            if (f[1][i - 1]) {
-                                f[1][j] = true;
-                            }
-                            f[i][j] = f[1][i - 1];
-                        } else {
-                            f[1][j] = true;
-                        }
-                    } else {
-
+                        f[i][j] = true;
+                        f[1][j] = f[1][j] || f[1][i - 1];
                     }
                 }
             }
