@@ -1,11 +1,36 @@
 package com.zbxx.sort;
 
+import com.zbxx.util.ArrayUtils;
+
 import java.util.Arrays;
 
 public class FastSort {
 
 
-	public static void fastSort(int arr[], int left, int right) {
+	/**
+	 * 算法导论中的快排思想实现
+	 * @param arr
+	 * @param left
+	 * @param right
+	 */
+	public static void fastSort(int arr[],int left,int right){
+		if(left<right){
+			int l = left;
+			int r= l+1;
+			int temp = arr[l];
+			for (; r <=right ; r++) {
+				if(arr[r]<temp){
+					ArrayUtils.swap(arr,++l,r);
+				}
+			}
+			ArrayUtils.swap(arr,l,left);
+			fastSort(arr,left,l-1);
+			fastSort(arr,l+1,right);
+		}
+	}
+
+
+	/*public static void fastSort(int arr[], int left, int right) {
 		if (left < right) {
 			int le = left;
 			int ri = right;
@@ -32,7 +57,7 @@ public class FastSort {
 		}
 
 
-	}
+	}*/
 
 
 	public static void main(String[] args) {
