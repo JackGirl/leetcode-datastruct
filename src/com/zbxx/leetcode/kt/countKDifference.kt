@@ -1,9 +1,12 @@
-package com.zbxx
+package com.zbxx.leetcode.kt
 
 fun main(args :Array<String>) {
     println(countKDifference(intArrayOf(1,3),2))
 }
 
+/**
+ * 2006 绝对差值为K的数对 数量
+ */
 fun countKDifference(nums: IntArray, k: Int): Int {
     var map = hashMapOf<Int,Int?>()
     var result:Int = 0
@@ -28,3 +31,4 @@ fun countKDifference(nums: IntArray, k: Int): Int {
     }
     return result
 }
+
