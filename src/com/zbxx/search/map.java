@@ -21,7 +21,7 @@ public class map {
         int [] dist = new int[points.length+1];
         Arrays.fill(dist,Integer.MAX_VALUE);
         dist[start] = 0;
-        set--;
+        set^=1<<(start-1);
         find(start,points,set,dist);
         return dist[end];
     }
@@ -57,6 +57,6 @@ public class map {
                 {{6,4}},
                 {}
         };
-        System.out.println(dijkstra(points,3,5));
+        System.out.println(dijkstra(points,3,6));
     }
 }
